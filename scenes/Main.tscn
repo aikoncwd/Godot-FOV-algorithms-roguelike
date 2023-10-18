@@ -1,0 +1,59 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/Main.gd" type="Script" id=1]
+
+[node name="Main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 128.0
+margin_top = 256.0
+margin_right = 608.0
+margin_bottom = 270.0
+text = "This is a playground to test different FOV algorithms for a roguelike"
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 128.0
+margin_top = 288.0
+margin_right = 608.0
+margin_bottom = 302.0
+text = "Select an algorithm, you will go to a test-dungeon"
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 128.0
+margin_top = 320.0
+margin_right = 555.0
+margin_bottom = 400.0
+text = "Move with arrows.
+Mouse Left-Click = make a wall
+Mouse Right-Click = clear wall
+ESC to go back"
+
+[node name="Label4" type="Label" parent="."]
+margin_left = 128.0
+margin_top = 400.0
+margin_right = 400.0
+margin_bottom = 432.0
+mouse_filter = 1
+mouse_default_cursor_shape = 2
+text = "Source code: https://aikoncwd.itch.io/"
+
+[node name="Button" type="Button" parent="."]
+margin_left = 128.0
+margin_top = 160.0
+margin_right = 256.0
+margin_bottom = 192.0
+text = "Raycasting FOV"
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 384.0
+margin_top = 160.0
+margin_right = 512.0
+margin_bottom = 192.0
+text = "Shadowcasting FOV"
+
+[connection signal="gui_input" from="Label4" to="." method="_on_Label4_gui_input"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]

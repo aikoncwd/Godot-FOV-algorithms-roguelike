@@ -11,7 +11,13 @@ config_version=4
 [application]
 
 config/name="FOV algorithms roguelike"
+run/main_scene="res://scenes/Main.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/width=800
+window/size/height=560
 
 [gui]
 
