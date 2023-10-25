@@ -26,3 +26,7 @@ I also recommend this article to read: http://www.adammil.net/blog/v125_roguelik
 [https://github.com/aikoncwd/Godot-FOV-algorithms-roguelike](https://aikoncwd.itch.io/godot-fov-algorithms-for-roguelikes)
 
 The source is full-commented. I'm using TileMaps and Godot 3.x
+
+## Version for Godot 4.x
+
+The user [thedyze](https://github.com/thedyze) made compatibility with Godot 4.x here: [https://github.com/aikoncwd/Godot-FOV-algorithms-roguelike/issues/1](https://github.com/aikoncwd/Godot-FOV-algorithms-roguelike/issues/1)
